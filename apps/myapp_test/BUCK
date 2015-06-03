@@ -1,0 +1,14 @@
+android_instrumentation_apk(
+  name = 'app_test',
+  manifest = 'AndroidManifest.xml',
+  apk = '//apps/myapp:app',
+  deps = [
+    '//test/com/example/activity:activity_test',
+  ],
+)
+
+android_instrumentation_test(
+  name = 'test',
+  apk = '//apps/myapp:app',
+  instrumentation_apk = ':app_test',
+)

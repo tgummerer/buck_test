@@ -1,5 +1,6 @@
 [alias]
     app = //apps/myapp:app
+    test_app = //apps/myapp_test:app_test
 [java]
     src_roots = /java/
 [project]
